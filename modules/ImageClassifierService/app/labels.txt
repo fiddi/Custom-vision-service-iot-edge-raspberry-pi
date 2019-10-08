@@ -1,2 +1,6 @@
-Apple
-Banana
+blue-4x2
+figure
+red-2x2
+red-4x2
+yellow-2x2
+yellow-4x2

@@ -14,22 +14,6 @@ class Colors(Enum):
     Orange = (255,165, 0)
 
 class DisplayManager(object):
-    def __apple(self):
-        G = Colors.Green.value
-        N = Colors.Nothing.value
-        Y = Colors.Yellow.value
-        logo = [
-        N, N, N, N, Y, Y, N, N,
-        N, N, N, Y, Y, N, N, N,
-        N, N, G, G, G, G, N, N,
-        N, G, G, G, G, G, G, N,
-        N, G, G, G, G, G, G, N,
-        N, G, G, G, G, G, G, N,
-        N, G, G, G, G, G, G, N,
-        N, N, G, G, G, G, N, N,
-        ]
-        return logo
-
     def __raspberry(self):
         G = Colors.Green.value
         N = Colors.Nothing.value
@@ -46,48 +30,126 @@ class DisplayManager(object):
         ]
         return logo
 
-    def __banana(self):
-        N = Colors.Nothing.value
+    def __lego(self):
+        W = Colors.White.value
+        R = Colors.Red.value
         Y = Colors.Yellow.value
         logo = [
-        N, N, Y, Y, N, N, N, N,
-        N, Y, Y, Y, N, N, N, N,
-        Y, Y, Y, N, N, N, N, N,
-        Y, Y, Y, N, N, N, N, N,
-        N, Y, Y, Y, N, N, N, N,
-        N, N, Y, Y, Y, N, N, N,
-        N, N, N, Y, Y, Y, Y, N, 
-        N, N, N, N, N, Y, Y, Y,
+        R, Y, Y, Y, Y, R, R, R, 
+        R, Y, W, W, Y, R, R, R,
+        R, Y, W, W, Y, R, R, R, 
+        R, Y, W, W, Y, R, R, R,
+        R, Y, W, W, Y, Y, Y, R,
+        R, Y, W, W, W, W, Y, R,
+        R, Y, W, W, W, W, Y, R,
+        R, Y, Y, Y, Y, Y, Y, R,
         ]
         return logo
 
-    def __orange(self):
+    def __figure(self):
         N = Colors.Nothing.value
-        O = Colors.Orange.value
+        Y = Colors.Yellow.value
+        B = Colors.Blue.value
+        R = Colors.Red.value
         logo = [
-        N, N, N, O, O, N, N, N, 
-        N, O, O, O, O, O, O, N, 
-        N, O, O, O, O, O, O, N, 
-        O, O, O, O, O, O, O, O, 
-        O, O, O, O, O, O, O, O, 
-        N, O, O, O, O, O, O, N, 
-        N, O, O, O, O, O, O, N, 
-        N, N, N, O, O, N, N, N,  
+        N, N, N, N, N, N, N, N,
+        N, N, Y, Y, Y, Y, N, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, B, Y, Y, B, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, R, Y, Y, R, Y, N,
+        N, N, Y, R, R, Y, N, N, 
+        N, N, N, Y, Y, N, N, N,
         ]
         return logo
 
-    def __lemon(self):
+    def __red4x2(self):
+        N = Colors.Nothing.value
+        Y = Colors.Red.value
+        logo = [
+        N, N, N, N, N, N, N, N,
+        N, N, N, N, N, N, N, N,
+        Y, N, Y, N, Y, N, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
+        ]
+        return logo
+
+    def __yellow4x2(self):
         N = Colors.Nothing.value
         Y = Colors.Yellow.value
         logo = [
         N, N, N, N, N, N, N, N,
-        N, N, N, Y, Y, N, N, N,
-        N, N, Y, Y, Y, Y, N, N,
-        Y, Y, Y, Y, Y, Y, Y, Y,
-        Y, Y, Y, Y, Y, Y, Y, Y,
+        N, N, N, N, N, N, N, N,
+        Y, N, Y, N, Y, N, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
+        ]
+        return logo
+
+    def __blue4x2(self):
+        N = Colors.Nothing.value
+        Y = Colors.Blue.value
+        logo = [
+        N, N, N, N, N, N, N, N,
+        N, N, N, N, N, N, N, N,
+        Y, N, Y, N, Y, N, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        Y, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
+        ]
+        return logo
+
+    def __red2x2(self):
+        N = Colors.Nothing.value
+        Y = Colors.Red.value
+        logo = [
+        N, N, N, N, N, N, N, N,
+        N, Y, Y, N, N, Y, Y, N,
         N, Y, Y, Y, Y, Y, Y, N,
-        N, N, Y, Y, Y, Y, N, N,
-        N, N, N, Y, Y, N, N, N,  
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
+        ]
+        return logo
+
+    def __yellow2x2(self):
+        N = Colors.Nothing.value
+        Y = Colors.Yellow.value
+        logo = [
+        N, N, N, N, N, N, N, N,
+        N, Y, Y, N, N, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
+        ]
+        return logo
+
+    def __blue2x2(self):
+        N = Colors.Nothing.value
+        Y = Colors.Blue.value
+        logo = [
+        N, N, N, N, N, N, N, N,
+        N, Y, Y, N, N, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, Y, Y, Y, Y, Y, Y, N,
+        N, N, N, N, N, N, N, N, 
+        N, N, N, N, N, N, N, N,
         ]
         return logo
 
@@ -118,19 +180,21 @@ class DisplayManager(object):
 
     def displayImage(self, strImage):
         print("Displaying " + strImage)
-        if 'apple' in strImage.lower():
-            self.__displayImage(self.__apple())
-        elif 'raspberry' in strImage.lower():
-            self.__displayImage(self.__raspberry())
-        elif 'banana' in strImage.lower():
-            self.__displayImage(self.__banana())
-        elif 'orange' in strImage.lower():
-            self.__displayImage(self.__orange())
-        elif 'lemon' in strImage.lower():
-            self.__displayImage(self.__lemon())
+        if 'yellow-4x2' in strImage.lower():
+            self.__displayImage(self.__yellow4x2())
+        elif 'yellow-2x2' in strImage.lower():
+            self.__displayImage(self.__yellow2x2())
+        elif 'red-4x2' in strImage.lower():
+            self.__displayImage(self.__red4x2())
+        elif 'red-2x2' in strImage.lower():
+            self.__displayImage(self.__red2x2())
+        elif 'blue-4x2' in strImage.lower():
+            self.__displayImage(self.__blue4x2())
+        elif 'blue-2x2' in strImage.lower():
+            self.__displayImage(self.__blue2x2())
+        elif 'figure' in strImage.lower():
+            self.__displayImage(self.__figure())
         elif 'none' in strImage.lower():
-            self.s.clear()
+            self.__displayImage(self.__lego())
         else:
-            self.__displayImage(self.__unknown())
-            self.s.clear()
-
+            self.__displayImage(self.__lego())
